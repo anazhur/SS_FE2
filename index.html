@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <h1>Tour Booking Form</h1>
+        </div>
+        <div class="main_form">
+            <form method="post">
+                <div class="input_area">
+                    <p>Name</p>
+                    <input type="text" name="first_name" placeholder="First Name">
+                    <input type="text" name="last_name" placeholder="Last Name">
+                </div>
+                <div class="input_area">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="name@mail.ru" id="email">
+                </div>
+                <div class="input_area">
+                    <label for="phone_number">Phone</label>
+                    <input type="number" name="phone_number" placeholder="### ### ####" id="phone_number">
+                </div>
+                <div class="input_area">
+                    <label for="date">When are you planning to visit?</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="input_area">
+                    <label for="quantity">How many people are in your group?</label>
+                    <input type="number" name="quantity" id="quantity">
+                </div>
+                <div class="input_area">
+                    <label for="countries">Which tour are you most interested in?</label>
+                    <select name="countries" id="countries">
+                        <option disabled selected>*Please select*</option>
+                        <option value="usa">USA</option>
+                        <option value="eu">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="uae">UAE</option>
+                </div>
+                <div class="input_area">
+                    <p>What is the best way to contact you?</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="e-mail">
+                        <label for="e-mail">Email</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="either">
+                        <label for="either">Either</label>
+                    </div>
+                </div>
+                <div class="input_area">
+                    <p>If phone, when is the best time of day for a call-back?</p>
+                    <div class="radio">
+                        <input type="radio" id="morning" name="time" value="8-11AM">
+                        <label for="morning">8 - 11 AM</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="noon" name="time" value="12-4PM">
+                        <label for="noon">12 - 4 PM</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="afternoon" name="time" value="6-10PM">
+                        <label for="afternoon">6 - 10 PM</label>
+                    </div>
+                    <div class="input_area">
+                        <label for="etc">Anything else we should know?</label>
+                        <textarea name="etc" id="etc" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- большой блок в див-е
+заголовок в форму не входит (h1) flex или паддинги
+текст к полям через лейблы
+к чекбоксам параграфы и лейблы
+-->
+
+<!-- https://www.figma.com/file/DX8poFj7ewLQ6OOuSsZKhh/html.to.design-(Community)?type=design&node-id=1-2&mode=design&t=JyJb9mmdM1T4YJNr-0 -->
